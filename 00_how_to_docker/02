@@ -1,1 +1,1 @@
-docker inspect Char
+docker-machine inspect char | grep -i ipaddress
