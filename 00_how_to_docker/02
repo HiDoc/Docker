@@ -1,1 +1,2 @@
-docker-machine inspect char | grep -i ipaddress
+#!/bin/sh
+docker-machine inspect char | grep -i ipaddress | sed "s/^[\ ]*//g"
