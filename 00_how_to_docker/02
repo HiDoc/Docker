@@ -1,2 +1,2 @@
 #!/bin/sh
-docker-machine inspect char | grep -i ipaddress | sed "s/^[\ ]*//g"
+docker-machine inspect --format='{{.Driver.IPAddress}}' Char

@@ -1,0 +1,5 @@
+#! /bin/sh
+eval $(docker-machine env Char)
+Token=$(docker swarm join-token worker | grep docker)
+eval $(docker-machine env Aiur)
+echo $($Token)

@@ -1,0 +1,1 @@
+docker swarm init --advertise-addr=$(docker-machine inspect --format='{{.Driver.IPAddress}}' Char)
