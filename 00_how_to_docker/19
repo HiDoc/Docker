@@ -1,2 +1,9 @@
-docker pull python:slim
-docker run -it --rm --name Abathur -v "$PWD":$DOCKER_CERT_PATH -w /usr/src/myapp -p 3000:3000  python:slim
+docker run -it --rm  \
+	--name Abathur \
+	-v ~/flask:/flask \
+	-w /flask/ \
+	-p 3000:3000 \
+	-e FLASK_APP=flaskio.py \
+	python:2-slim \
+bash
+#run : pip install flask && flask run --port=3000 --host=0.0.0.0

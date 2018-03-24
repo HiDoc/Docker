@@ -1,2 +1,1 @@
-#!/bin/sh
 docker-machine inspect --format='{{.Driver.IPAddress}}' Char
